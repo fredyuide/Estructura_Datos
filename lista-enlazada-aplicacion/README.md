@@ -34,5 +34,5 @@ Para ejecutar este proyecto necesitas:
 ## **Instrucciones de Uso**
 1. **Clona este repositorio:**
    ```bash
-   git clone https://github.com/tu-usuario/lista-enlazada-aplicacion.git
+   git clone https://github.com/fredyuide/Estructura_Datos/tree/main/lista-enlazada-aplicacion.git
    cd lista-enlazada-aplicacion
