@@ -1,0 +1,9 @@
+# Expresiones válidas
+((a + b) * c)
+5 * (3 + 2)
+[a + b] * {c}
+
+# Expresiones inválidas
+((a + b) * c
+(5 * [3 + 2)}
+5 * (3 & 2)
