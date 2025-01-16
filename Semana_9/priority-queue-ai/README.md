@@ -22,7 +22,7 @@ En entornos modernos como centros de datos, sistemas operativos y plataformas de
 ## Instalación
 1. Clonar este repositorio:
    ```bash
-   git clone https://github.com/tu_usuario/priority-queue-ai.git
+   git clone https://github.com/fredyuide/Estructura_Datos/edit/main/Semana_9/priority-queue-ai.git
    cd priority-queue-ai
    ```
 2. Instalar dependencias:
