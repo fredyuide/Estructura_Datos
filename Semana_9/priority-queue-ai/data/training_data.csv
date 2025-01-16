@@ -1,1 +1,4 @@
-
+priority,arrival_time,execution_time,waiting_time
+1,0,5,3
+2,2,3,4
+3,4,1,2
