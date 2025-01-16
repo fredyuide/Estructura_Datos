@@ -125,10 +125,9 @@ priority-queue-ai/
 La integración de IA en la gestión de colas de prioridad puede transformar sistemas operativos, plataformas de atención al cliente y centros de datos, mejorando la eficiencia y reduciendo costos operativos.
 
 ## Referencias
-- Goodfellow, I., Bengio, Y., & Courville, A. (2016). *Deep Learning*. MIT Press.
-- Chollet, F. (2018). *Deep Learning with Python*. Manning Publications.
-- TensorFlow Documentation. https://www.tensorflow.org/
-
-## Contacto
-- Autor: [Tu Nombre o Usuario]
-- Repositorio: [GitHub - priority-queue-ai](https://github.com/tu_usuario/priority-queue-ai)
+- Atlassian. (s/f). ¿Qué es un sistema distribuido? Atlassian. Recuperado el 16 de enero de 2025, de https://www.atlassian.com/es/microservices/microservices-architecture/distributed-architecture
+- Cola de prioridad - Estructura de datos y algoritmos (resumen) - Obsidian Publish. (s/f). Obsidian.Md. Recuperado el 16 de enero de 2025, de https://publish.obsidian.md/algoritmos/TADs/Cola+de+prioridad
+- ¿Qué es la inteligencia artificial o IA? (s/f). Google Cloud. Recuperado el 16 de enero de 2025, de https://cloud.google.com/learn/what-is-artificial-intelligence?hl=es-419
+- ¿Qué es TensorFlow y para qué sirve? (s/f). ¿Qué es TensorFlow y para qué sirve? Recuperado el 16 de enero de 2025, de https://www.incentro.com/es-ES/blog/que-es-tensorflow
+- (S/f-a). Cloudflare.com. Recuperado el 16 de enero de 2025, de https://www.cloudflare.com/es-es/learning/ai/what-is-predictive-ai/#:~:text=La%20inteligencia%20artificial%20(IA)%20predictiva%20es%20la%20capacidad%20de%20un,hacer%20predicciones%20sobre%20el%20futuro.
+- (S/f-b). Amazon.com. Recuperado el 16 de enero de 2025, de https://aws.amazon.com/es/what-is/neural-network/
