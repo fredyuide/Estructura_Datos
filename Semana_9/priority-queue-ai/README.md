@@ -3,10 +3,13 @@
 ## Introducción
 Las colas de prioridad son estructuras fundamentales para gestionar recursos en sistemas computacionales. Permiten atender tareas críticas antes que las de menor importancia. Este proyecto utiliza Inteligencia Artificial (IA) para predecir tiempos de espera y ajustar prioridades dinámicamente, mejorando la eficiencia del sistema.
 
+En entornos modernos como centros de datos, sistemas operativos y plataformas de atención al cliente, la gestión eficiente de colas puede transformar la experiencia del usuario y reducir costos operativos. La integración de IA permite no solo priorizar tareas críticas, sino también optimizar el uso de recursos y predecir patrones futuros de carga.
+
 ## Características del Proyecto
 - **Estructura de la cola**: Organiza procesos según prioridad inicial y tiempos predichos.
 - **Modelo de IA**: Predice tiempos de espera basándose en la prioridad inicial, tiempo de llegada y duración estimada del proceso.
 - **Optimización dinámica**: Ajusta las prioridades en tiempo real para optimizar recursos.
+- **Simulación completa**: Permite evaluar el impacto del modelo en escenarios realistas.
 
 ## Requisitos
 - **Python 3.8+**
@@ -14,6 +17,7 @@ Las colas de prioridad son estructuras fundamentales para gestionar recursos en 
   - TensorFlow
   - Pandas
   - Matplotlib
+  - NumPy
 
 ## Instalación
 1. Clonar este repositorio:
@@ -26,16 +30,19 @@ Las colas de prioridad son estructuras fundamentales para gestionar recursos en 
    pip install -r requirements.txt
    ```
 
+3. Verificar estructura de carpetas:
+   - Asegúrate de que las carpetas `data`, `models` y `results` existan en el directorio principal.
+
 ## Estructura del Proyecto
 ```plaintext
 priority-queue-ai/
 ├── README.md                # Documentación del proyecto
 ├── requirements.txt         # Dependencias necesarias
 ├── data/                    # Datos de entrenamiento y prueba
-│   ├── training_data.csv
-│   └── test_data.csv
+│   ├── training_data.csv    # Datos de entrenamiento
+│   └── test_data.csv        # Datos de prueba
 ├── models/                  # Modelos entrenados
-│   └── priority_model.h5
+│   └── priority_model.h5    # Modelo entrenado
 ├── src/                     # Código fuente
 │   ├── main.py              # Simulación del sistema
 │   ├── queue.py             # Implementación de la cola de prioridad
@@ -60,6 +67,10 @@ priority-queue-ai/
    ```
 2. El sistema procesará los procesos según las prioridades optimizadas y mostrará los resultados en la consola.
 
+### Opciones Adicionales
+- Modificar los datos en `data/test_data.csv` para probar diferentes escenarios.
+- Usar `results/simulation_results.json` para almacenar métricas de rendimiento.
+
 ## Resultados y Análisis
 ### Métricas Clave
 - **Tiempo de espera promedio**:
@@ -73,8 +84,33 @@ priority-queue-ai/
 ### Visualizaciones
 1. **Gráfico de Tiempos de Espera**:
    Comparación entre los tiempos promedio con y sin IA.
-2. **Gráfico de Utilización de CPU**:
-   Evolución de la utilización de recursos durante la simulación.
+   ```python
+   import matplotlib.pyplot as plt
+
+   labels = ['Sin IA', 'Con IA']
+   waiting_times = [3.5, 2.3]
+
+   plt.figure(figsize=(6, 4))
+   plt.bar(labels, waiting_times, color=['blue', 'green'])
+   plt.title('Comparación de Tiempos de Espera Promedio')
+   plt.ylabel('Tiempo de Espera (segundos)')
+   plt.show()
+   ```
+2. **Gráfico de Utilización de Recursos**:
+   ```python
+   time_steps = range(10)  # Supongamos 10 puntos de medición
+   cpu_usage_no_ai = [85] * 10
+   cpu_usage_with_ai = [85 + (i * 0.55) for i in time_steps]
+
+   plt.figure(figsize=(6, 4))
+   plt.plot(time_steps, cpu_usage_no_ai, label='Sin IA', linestyle='--', color='red')
+   plt.plot(time_steps, cpu_usage_with_ai, label='Con IA', color='green')
+   plt.title('Evolución de la Utilización de CPU')
+   plt.xlabel('Tiempo')
+   plt.ylabel('Utilización de CPU (%)')
+   plt.legend()
+   plt.show()
+   ```
 
 ## Reflexión y Conclusiones
 ### Desafíos
@@ -96,4 +132,3 @@ La integración de IA en la gestión de colas de prioridad puede transformar sis
 ## Contacto
 - Autor: [Tu Nombre o Usuario]
 - Repositorio: [GitHub - priority-queue-ai](https://github.com/tu_usuario/priority-queue-ai)
-
