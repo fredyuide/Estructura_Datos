@@ -1,1 +1,10 @@
-
+{
+  "initial_metrics": {
+    "average_waiting_time": 3.5,
+    "cpu_utilization": 85.0
+  },
+  "optimized_metrics": {
+    "average_waiting_time": 2.3,
+    "cpu_utilization": 90.5
+  }
+}
